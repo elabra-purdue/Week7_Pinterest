@@ -1,0 +1,92 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    gap: 50px; /*add space between menu items*/
+
+}
+
+.header .menu {
+    display: flex;
+    gap: 20px;
+}
+
+/* Menu links */
+.header .menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+.menu img{
+    width: 80px;
+    height: 40px;
+}
+
+/*Search bar styling*/
+.search-bar {
+    background-color: #f1f1f1;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 60%;
+    text-align: center;
+    position: relative;
+}
+
+.search-bar span {
+    color: #888;
+    font-size: 16px;
+}
+
+/*Pin container - flexbox layout*/
+.pin-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.pin {
+    background-color: #fff;
+    width: 300px;
+    margin: 3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.pin:hover {
+    transform: scale(1.05);
+}
+
+.pin img {
+    width: 100%;
+    height: auto;
+}
+
+.pin-content {
+    padding: 10px;
+    text-align: center;
+}
+
+/*text styling for pin content*/
+h3 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
